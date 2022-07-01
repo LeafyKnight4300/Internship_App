@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+ <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+              xmlns:menu="Windows.UI.Xaml.Controls.Primitives"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Notes.Views.Page1"
+             Title="Some Text about myself I guess">
+    <ContentPage.Content>
+        <StackLayout Margin="0">
+            <Grid ColumnDefinitions="*">
+                <Button Text="Hello"
+                     HorizontalOptions="Center"
+                        Clicked="OnDisplayAlertButtonClicked"
+                        />
+                <Picker Title="I have a few consoles, wanna play one?"
+                    Grid.Row="1"
+                    TitleColor="Blue"
+                    ItemsSource="{Binding Monkeys}"
+                    ItemDisplayBinding="{Binding Name}"
+                    SelectedItem="{Binding SelectedMonkey}">
+                    <Picker.Items>
+                        <x:String>NES Classic</x:String>
+                        <x:String>SNES Classic</x:String>
+                        <x:String>Game Cube</x:String>
+                        <x:String>Wii</x:String>
+                        <x:String>Wii U</x:String>
+                        <x:String>Nintendo Switch</x:String>
+                        <x:String>PS2</x:String>
+                        <x:String>PS3</x:String>
+                        <x:String>PS4</x:String>
+                        <x:String>Xbox360</x:String>
+                        <x:String>Xbox One</x:String>
+                        <x:String>Xbox Series X</x:String>
+                        <x:String>Sega Genesis</x:String>
+                        <x:String>Sega Dreamcast</x:String>
+                        <x:String>Atari 2600</x:String>
+                    </Picker.Items>
+                </Picker>
+                <Button Text="Watch me stream and be dumb"
+                        Grid.Row="11"
+                        Clicked="OnButtonClicked"
+                        />
+
+                <Image Source="app_Controller.png"
+                       Grid.Row="5" 
+                       WidthRequest="200" 
+                       Grid.RowSpan="5"/>
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
+
+    
+    
