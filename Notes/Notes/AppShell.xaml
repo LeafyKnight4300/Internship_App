@@ -5,8 +5,8 @@
        x:Class="Notes.AppShell">
     <!-- Display a bottom tab bar containing two tabs -->
     <TabBar>
-        <ShellContent Title="Stuff"
-                      Icon="latios.png"
+        <ShellContent Title="Home"
+                      Icon="home.png"
                       ContentTemplate="{DataTemplate views:Page1}" />
         <ShellContent Title="Notes"
                       Icon="icon_feed.png"
