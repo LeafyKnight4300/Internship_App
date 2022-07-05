@@ -40,7 +40,7 @@
                         Clicked="OnButtonClicked"
                         />
 
-                <Image Source="app_Controller.png"
+                <Image Source="SWEG.png"
                        Grid.Row="5" 
                        WidthRequest="200" 
                        Grid.RowSpan="5"/>
