@@ -8,15 +8,15 @@
         <ShellContent Title="Home"
                       Icon="home.png"
                       ContentTemplate="{DataTemplate views:Page1}" />
-        <ShellContent Title="Notes"
+        <ShellContent Title="location"
                       Icon="icon_feed.png"
                       ContentTemplate="{DataTemplate views:NotesPage}" />
-        <ShellContent Title="About"
+        <ShellContent Title="calculations"
                       Icon="icon_about.png"
                       ContentTemplate="{DataTemplate views:AboutPage}" />
         
-        <ShellContent Title="More Stuff"
-                      Icon="Latias.png"
+        <ShellContent Title="about"
+                      Icon="icon_about.png"
                       ContentTemplate="{DataTemplate views:Page2}" />
     </TabBar>
 </Shell>
