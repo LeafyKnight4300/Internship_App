@@ -29,7 +29,9 @@
                         />
 
                 <Image Source="SWEG.png"
+
                        Grid.Row="3" 
+
                        WidthRequest="200" 
                        Grid.RowSpan="5"
                        Grid.ColumnSpan="2"/>
