@@ -3,7 +3,7 @@
               xmlns:menu="Windows.UI.Xaml.Controls.Primitives"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Notes.Views.Page1"
-             Title="Some Text about myself I guess"
+             Title="This is a Git Push Test"
               >
      
     <ContentPage.Content>
