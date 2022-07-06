@@ -3,34 +3,61 @@
               xmlns:menu="Windows.UI.Xaml.Controls.Primitives"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Notes.Views.Page1"
-             Title="This is a Git Push Test"
+             Title="Home"
               >
      
     <ContentPage.Content>
         <StackLayout Margin="0">
-            <Grid ColumnDefinitions="*,*"> 
+            <Grid ColumnDefinitions="*,*">
                 <Picker Title="Select an aircraft"
+                    Grid.Row="3"
                     Grid.ColumnSpan="2"
-                    HorizontalOptions="Center"
+                    HorizontalOptions="Fill"
                      >
                     <Picker.Items>
-                        <x:String>NES Classic</x:String>
+                        <x:String>C-5</x:String>
+                        <x:String>C-17</x:String>
+                        <x:String>C-130</x:String>
+                        <x:String>C-130</x:String>
+                        <x:String>Boeing 747</x:String>
                     </Picker.Items>
                 </Picker>
+                <Label Text="   &#10;   Welcome to the Xamarin Project!"
+                       Grid.Row="0"
+                       Grid.RowSpan="3"
+                       Grid.ColumnSpan="2"
+                       FontSize="24"
+                       LineHeight="0.30"
+                       HorizontalOptions="Fill"
+                       FontAttributes="Bold"
+                       TextColor="White"
+                       BackgroundColor="DimGray"
+                       LineBreakMode="WordWrap"
+                           />
+                <Label Text="&#10;Please choose an Aircraft from the drop down menu and select whether you would like to takeoff or landing then proceed to the Location Page"
+                       Margin="18"
+                       Grid.Row="0"
+                       Grid.RowSpan="3"
+                       Grid.ColumnSpan="2"
+                       FontSize="18"
+                       TextColor="White"
+                       HorizontalOptions="Center"
+                       LineBreakMode="WordWrap"
+                           />
                 <Button Text="Takeoff"
-                        Grid.Row="1"
+                        Grid.Row="4"
                         Grid.Column="0"
                         Clicked="OnDisplayAlertButtonClicked"
                         />
                 <Button Text="Landing"
-                        Grid.Row="1"
+                        Grid.Row="4"
                         Grid.Column="1"
                         Clicked="OnDisplayAlertButtonClicked"
                         />
 
                 <Image Source="SWEG.png"
 
-                       Grid.Row="3" 
+                       Grid.Row="6" 
 
 
                        WidthRequest="200" 
