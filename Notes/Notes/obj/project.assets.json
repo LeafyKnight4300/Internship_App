@@ -525,24 +525,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Sern_Intern\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\Sern_Intern\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Sern_Intern\\source\\repos\\Notes\\Notes\\Notes\\Notes.csproj",
+      "projectUniqueName": "C:\\Users\\Sern_Intern\\Documents\\GitClone\\Internship_App\\Notes\\Notes\\Notes.csproj",
       "projectName": "Notes",
-      "projectPath": "C:\\Users\\Sern_Intern\\source\\repos\\Notes\\Notes\\Notes\\Notes.csproj",
+      "projectPath": "C:\\Users\\Sern_Intern\\Documents\\GitClone\\Internship_App\\Notes\\Notes\\Notes.csproj",
       "packagesPath": "C:\\Users\\Sern_Intern\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Sern_Intern\\source\\repos\\Notes\\Notes\\Notes\\obj\\",
+      "outputPath": "C:\\Users\\Sern_Intern\\Documents\\GitClone\\Internship_App\\Notes\\Notes\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
         "C:\\Users\\Sern_Intern\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

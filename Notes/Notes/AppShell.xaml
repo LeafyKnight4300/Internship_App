@@ -6,16 +6,15 @@
     <!-- Display a bottom tab bar containing two tabs -->
     <TabBar>
         <ShellContent Title="Home"
-                      Icon="home.png"
+                      Icon="house.png"
                       ContentTemplate="{DataTemplate views:Page1}" />
-        <ShellContent Title="location"
-                      Icon="icon_feed.png"
+        <ShellContent Title="Location"
+                      Icon="compass.png"
                       ContentTemplate="{DataTemplate views:AboutPage}" />
-        <ShellContent Title="calculations"
-                      Icon="icon_about.png"
+        <ShellContent Title="Calculations"
+                      Icon="calculator.png"
                       ContentTemplate="{DataTemplate views:NotesPage}" />
-        
-        <ShellContent Title="about"
+        <ShellContent Title="About"
                       Icon="icon_about.png"
                       ContentTemplate="{DataTemplate views:Page2}" />
     </TabBar>
