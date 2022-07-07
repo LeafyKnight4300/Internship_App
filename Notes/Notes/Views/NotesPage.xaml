@@ -2,19 +2,63 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Notes.Views.NotesPage"
-             Title="Notes">
+             Title="Calculations">
     <!-- Layout children vertically -->
-    <StackLayout Margin="20">
-        <Editor x:Name="editor"
-                Placeholder="write stuff i guess"
-                HeightRequest="100" />
-        <!-- Layout children in two columns -->
-        <Grid ColumnDefinitions="*,*">
-            <Button Text="Save"
-                    Clicked="OnSaveButtonClicked" />
-            <Button Grid.Column="1"
-                    Text="Delete"
-                    Clicked="OnDeleteButtonClicked"/>
-        </Grid>
-    </StackLayout>
+    <StackLayout>
+        <StackLayout Background="gray"
+                 VerticalOptions="Start">
+            <StackLayout Margin="20">
+                <Label Text="Current Aircraft Weight"
+                   TextColor="White"/>
+
+                <Picker Title="Select an aircraft"                    
+                    HorizontalOptions="Fill"
+                BackgroundColor="DarkGray"
+                >
+                    <Picker.Items>
+                        <x:String>C-5</x:String>
+                    </Picker.Items>
+
+                </Picker>
+
+                <Label Text="Balance Results"
+                   TextColor="White"/>
+
+                <Picker Title="Select an aircraft"
+                    HorizontalOptions="Fill"
+                BackgroundColor="DarkGray"
+                     >
+                    <Picker.Items>
+                        <x:String>C-5</x:String>
+                    </Picker.Items>
+                </Picker>
+
+                <Label Text="Takeoff Recomendations"
+                   TextColor="White"/>
+
+                <Picker Title="Select an aircraft"
+                    HorizontalOptions="Fill"
+                BackgroundColor="DarkGray"
+                     >
+                    <Picker.Items>
+                        <x:String>C-5</x:String>
+                    </Picker.Items>
+                </Picker>
+
+            </StackLayout>
+        </StackLayout>
+        <StackLayout Margin="20">
+            <Label Text="Loading Slot 1"/>
+            <Picker Title="Select a cargo"
+                    HorizontalOptions="Fill"
+                    >
+                <Picker.Items>
+                    <x:String>Humvee</x:String>
+                </Picker.Items>
+                
+            </Picker>
+        </StackLayout>
+    </StackLayout>   
+    
+    
 </ContentPage>

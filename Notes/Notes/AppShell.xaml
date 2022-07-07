@@ -10,10 +10,10 @@
                       ContentTemplate="{DataTemplate views:Page1}" />
         <ShellContent Title="location"
                       Icon="icon_feed.png"
-                      ContentTemplate="{DataTemplate views:NotesPage}" />
+                      ContentTemplate="{DataTemplate views:AboutPage}" />
         <ShellContent Title="calculations"
                       Icon="icon_about.png"
-                      ContentTemplate="{DataTemplate views:AboutPage}" />
+                      ContentTemplate="{DataTemplate views:NotesPage}" />
         
         <ShellContent Title="about"
                       Icon="icon_about.png"
