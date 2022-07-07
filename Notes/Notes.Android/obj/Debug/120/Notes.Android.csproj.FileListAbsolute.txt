@@ -635,3 +635,5 @@ C:\Users\Sern_Intern\source\repos\Notes\Notes\Notes.Android\obj\Debug\120\stamp\
 C:\Users\Sern_Intern\source\repos\Notes\Notes\Notes.Android\obj\Debug\120\stamp\_GenerateJavaStubs.stamp
 C:\Users\Sern_Intern\source\repos\Notes\Notes\Notes.Android\obj\Debug\120\stamp\_GeneratePackageManagerJava.stamp
 C:\Users\Sern_Intern\source\repos\Notes\Notes\Notes.Android\obj\Debug\120\stamp\_ResolveLibraryProjectImports.stamp
+C:\Users\Sern_Intern\source\repos\Notes\Notes\Notes.Android\obj\Debug\120\res\drawable\calc.png
+C:\Users\Sern_Intern\source\repos\Notes\Notes\Notes.Android\obj\Debug\120\res\drawable\home.png
