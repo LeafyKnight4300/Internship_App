@@ -4,68 +4,42 @@
              x:Class="Notes.Views.AboutPage"
              Title="Location">
     <!-- Layout children in two rows -->
-    <ContentPage.Content>
-        <StackLayout Margin="0">
-            <Grid ColumnDefinitions="*">
-                <Label HorizontalOptions="Fill"
-                       Grid.RowSpan="3"
-                       BackgroundColor="Gray"
-                       />
+    <StackLayout>
+        <StackLayout Background="gray"
+                 VerticalOptions="Start">
+            <StackLayout Margin="20">
                 <Label Text="Choose a Location"
                        HorizontalOptions="Center"
                        FontSize="30"
                        TextColor="White"
                       />
-                <Picker Title="Select a starting location"
-                        Margin="5"
-                        Grid.Row="1"
-                        TextColor="White"
-                        BackgroundColor="DarkGray"
-                        HorizontalOptions="Fill"
-                     >
-                    <Picker.Items>
-                        <x:String></x:String>
-                        <x:String>Robins AFB</x:String>
-                        <x:String>Hill AFB</x:String>
-                        <x:String>Tinker AFB</x:String>
-                        <x:String>Shaw AFB</x:String>
-                        <x:String>Atlanta</x:String>
-                    </Picker.Items>
-                </Picker>
-                <Picker Title="Select a Runway"
-                        Margin="5"
-                    Grid.Row="2"
-                        TextColor="White"
-                        BackgroundColor="DarkGray"
-                    HorizontalOptions="Fill"
-                     >
-                    <Picker.Items>
-                        <x:String></x:String>
-                        <x:String>Robins AFB</x:String>
-                    </Picker.Items>
-                </Picker>
-                <Label Text="Location"
-                       Grid.Row="3"
-                       />
-                <Label Text="Temperature"
-                       Grid.Row="4"
-                       />
-                <Label Text="Wind Speed"
-                       Grid.Row="5"
-                       />
-                <Label Text="Runway Name"
-                       Grid.Row="6"
-                       />
-                <Label Text="Runway Dimensions"
-                       Grid.Row="7"
-                       />
-                <Label Text="Runway Elevation"
-                       Grid.Row="8"
-                       />
-                
-            </Grid>
+                <Picker BackgroundColor="DarkGray" Title="Select an Airport" x:Name="CategoryPicker" ItemsSource="{Binding Categories}" ItemDisplayBinding="{Binding CategoryName}" SelectedIndexChanged="DiameterPicker_SelectedIndexChanged"></Picker>
+                <Picker BackgroundColor="DarkGray" Title="Select a Runway" x:Name="ValuePicker" ItemDisplayBinding="{Binding ValueName}"></Picker>
+
+
+            </StackLayout>
         </StackLayout>
-    </ContentPage.Content>
+        <StackLayout Margin="20">
+            <Label Text="Location"
+                   
+                       />
+            <Label Text="Temperature"
+                     
+                       />
+            <Label Text="Wind Speed"
+                       
+                       />
+            <Label Text="Runway Name"
+                       
+                       />
+            <Label Text="Runway Dimensions"
+                      
+                       />
+            <Label Text="Runway Elevation"
+                       
+                       />
+        </StackLayout>
+    </StackLayout>
+
 
 </ContentPage>
-

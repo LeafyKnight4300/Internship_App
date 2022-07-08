@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "3l4KcOJtqX9LZrequZ6yjvbv+hkiP7aqEXgMf33UGb9QEaqH7nRl8B7b5b960i0SW+4tbkKM8IijBnCNBZ208w==",
+  "dgSpecHash": "npLg/yw22usCQx2sCSolC98ju/hSNZ3a7IS17vIwgvn2b+3vBsXDeuKr53QX4+xa10IZOGPOgqI1iAsr06MiTw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Sern_Intern\\Documents\\GitClone\\Internship_App\\Notes\\Notes\\Notes.csproj",
+  "projectFilePath": "C:\\Users\\Sern_Intern\\source\\repos\\Notes\\Notes\\Notes\\Notes.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Sern_Intern\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\Sern_Intern\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
