@@ -1279,3 +1279,6 @@ C:\Users\Sern_Intern\Documents\GitClone\Internship_App\Notes\Notes.Android\obj\D
 C:\Users\Sern_Intern\Documents\GitClone\Internship_App\Notes\Notes.Android\obj\Debug\120\res\drawable\house.png
 C:\Users\Sern_Intern\Documents\GitClone\Internship_App\Notes\Notes.Android\obj\Debug\120\res\drawable\compass.png
 C:\Users\Sern_Intern\Documents\GitClone\Internship_App\Notes\Notes.Android\obj\Debug\120\res\drawable\calculator.png
+C:\Users\Sern_Intern\source\repos\Notes\Notes\Notes.Android\obj\Debug\120\res\drawable\house.png
+C:\Users\Sern_Intern\source\repos\Notes\Notes\Notes.Android\obj\Debug\120\res\drawable\compass.png
+C:\Users\Sern_Intern\source\repos\Notes\Notes\Notes.Android\obj\Debug\120\res\drawable\calculator.png

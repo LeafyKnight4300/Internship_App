@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "59YTLZfZTyr3ldH4fVX4itGf7nPV52NoQ9/s/Khb7CjJe/UPu8eGWpwteGQN/O+mbsaRF4mcLCkDuDCWiNW1xQ==",
+  "dgSpecHash": "raVkferVrkLLB9++p/SwJxE3hNAmcQ5XrGKMb+pDdaji7pw7Pw6wMVAKJdAuPo8RoBtZUD4oqktw/CzJjLV9rg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Sern_Intern\\Documents\\GitClone\\Internship_App\\Notes\\Notes.iOS\\Notes.iOS.csproj",
+  "projectFilePath": "C:\\Users\\Sern_Intern\\source\\repos\\Notes\\Notes\\Notes.iOS\\Notes.iOS.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Sern_Intern\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
     "C:\\Users\\Sern_Intern\\.nuget\\packages\\xamarin.essentials\\1.7.0\\xamarin.essentials.1.7.0.nupkg.sha512",
