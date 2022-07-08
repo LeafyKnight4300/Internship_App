@@ -14,7 +14,7 @@
         <ShellContent Title="Calculations"
                       Icon="calculator.png"
                       ContentTemplate="{DataTemplate views:NotesPage}" />
-        <ShellContent Title="About"
+        <ShellContent Title="Info"
                       Icon="icon_about.png"
                       ContentTemplate="{DataTemplate views:Page2}" />
     </TabBar>
