@@ -1,7 +1,9 @@
+
 ﻿using HtmlAgilityPack;
 using System;
 using System.Collections.Generic;
 using System.IO;
+
 using Xamarin.Forms;
 using Xamarin.Forms.Internals;
 
@@ -14,6 +16,7 @@ namespace Notes.Views
         public AboutPage()
         {
             InitializeComponent();
+
             var Local = new Dictionary<string, string>
         {  {"Hill", "KHIF"}, {"Robins", "KWRB"}, {"Tinker", "KTIK"}, {"Shaw", "KSSC"}, {"Atlanta", "KATL"}
         };
@@ -157,4 +160,5 @@ namespace Notes.Views
             }
         } 
     }
+
 }

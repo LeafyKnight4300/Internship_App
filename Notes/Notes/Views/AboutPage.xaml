@@ -13,6 +13,7 @@
                        FontSize="30"
                        TextColor="White"
                       />
+
                 <Picker x:Name="Location" Title="Select an Airport" BackgroundColor="DarkGray"/>
                 <Picker x:Name="Runway" Title="Select a Runway" BackgroundColor="DarkGray"/>
             </StackLayout>
@@ -49,6 +50,8 @@
                    HorizontalTextAlignment="Center"
                    FontAttributes="Bold"/>
         </StackLayout>
+
+
     </StackLayout>
 
 
