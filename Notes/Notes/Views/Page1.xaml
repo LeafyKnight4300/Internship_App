@@ -9,18 +9,13 @@
     <ContentPage.Content>
         <StackLayout Margin="0">
             <Grid ColumnDefinitions="*,*">
-                <Picker Title="Select an aircraft"
+                <Picker x:Name = "picker"  
+                        Title="Select an aircraft"
                     Grid.Row="3"
                     Grid.ColumnSpan="2"
                     HorizontalOptions="Fill"
                      >
-                    <Picker.Items>
-                        <x:String>C-5</x:String>
-                        <x:String>C-17</x:String>
-                        <x:String>C-130</x:String>
-                        <x:String>C-130</x:String>
-                        <x:String>Boeing 747</x:String>
-                    </Picker.Items>
+                    
                 </Picker>
                 <Label Text="   &#10;   Welcome to the Xamarin Project!"
                        Grid.Row="0"

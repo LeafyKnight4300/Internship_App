@@ -2,33 +2,42 @@
 using System.IO;
 using Xamarin.Forms;
 using Xamarin.Essentials;
+using System.Collections.Generic;
 
 namespace Notes.Views
 {
     public partial class Page1 : ContentPage
     {
-        
        
-
         public Page1()
         {
             InitializeComponent();
-        }
-        async void OnDisplayAlertButtonClicked(object sender, EventArgs e)
-        {
-            bool start = await DisplayAlert("hello random person", "My name is William, and odds are im taller than you", "Gotcha", "Doubt it");
-            if (start == false)
+            var page = new NotesPage();
+            var aircraft = new Dictionary<string, int>
+        {  {"C-5", 5}, {"C-17", 4}, {"C-130", 3}, {"F-15", 2}, {"Boeing 747", 5}
+        };
+
+            foreach (string place in aircraft.Keys)
             {
-              await DisplayAlert("Bruh","", null, "¯|_ (ツ)_|¯");     
+                picker.Items.Add(place);
             }
 
-        }
-        async void OnButtonClicked(object sender, EventArgs e)
-        {
-            // Launch the specified URL in the system browser.
-            await Launcher.OpenAsync("https://m.twitch.tv/videos/1519067637");
-        }
+            picker.SelectedIndexChanged += (sender, args) =>
+            {
+                
+                var x = picker.SelectedItem;
+                int pickercount = aircraft[x as string];
+                Console.WriteLine(pickercount);
+                int i = 0;
+                while ((pickercount - 1) > i)
+                {
+                    
+                    
+                    
+                }
+            };
 
+        
 
     }
 
@@ -36,4 +45,4 @@ namespace Notes.Views
       
         
 
-}
+}}

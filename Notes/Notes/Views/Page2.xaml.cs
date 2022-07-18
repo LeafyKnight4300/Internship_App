@@ -9,6 +9,8 @@ namespace Notes.Views
         public Page2()
         {
             InitializeComponent();
+            
+            
         }
     }
 }
