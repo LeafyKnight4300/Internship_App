@@ -4,6 +4,7 @@ public class MonoPackageManager_Resources {
 		/* We need to ensure that "Notes.Android.dll" comes first in this list. */
 		"Notes.Android.dll",
 		"FormsViewGroup.dll",
+		"HtmlAgilityPack.dll",
 		"Notes.dll",
 		"Xamarin.AndroidX.Activity.dll",
 		"Xamarin.AndroidX.Annotation.dll",

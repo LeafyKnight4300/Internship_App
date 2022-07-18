@@ -11,52 +11,76 @@
                 <Label Text="Current Aircraft Weight"
                    TextColor="White"/>
 
-                <Picker Title="Select an aircraft"                    
-                    HorizontalOptions="Fill"
+                <Label x:Name="WEIGHT" 
+                    Text="Select an aircraft"                    
+                    HorizontalOptions="Center"
+                       TextDecorations="Underline"
+                       FontSize="Large"
                 BackgroundColor="DarkGray"
-                >
-                    <Picker.Items>
-                        <x:String>C-5</x:String>
-                    </Picker.Items>
+                />
 
-                </Picker>
+
+
 
                 <Label Text="Balance Results"
                    TextColor="White"/>
 
-                <Picker Title="Select an aircraft"
-                    HorizontalOptions="Fill"
+                <Label x:Name="WEIGHT1" 
+                    Text="Select an aircraft"                    
+                    HorizontalOptions="Center"
+                       TextDecorations="Underline"
+                       FontSize="Large"
                 BackgroundColor="DarkGray"
-                     >
-                    <Picker.Items>
-                        <x:String>C-5</x:String>
-                    </Picker.Items>
-                </Picker>
+                />
 
                 <Label Text="Takeoff Recomendations"
                    TextColor="White"/>
 
-                <Picker Title="Select an aircraft"
-                    HorizontalOptions="Fill"
+                <Label x:Name="WEIGHT2" 
+                    Text="Select an aircraft"                    
+                    HorizontalOptions="Center"
+                       TextDecorations="Underline"
+                       FontSize="Large"
                 BackgroundColor="DarkGray"
-                     >
-                    <Picker.Items>
-                        <x:String>C-5</x:String>
-                    </Picker.Items>
-                </Picker>
+                />
 
             </StackLayout>
         </StackLayout>
         <StackLayout Margin="20">
-            <Label Text="Loading Slot 1"/>
-            <Picker Title="Select a cargo"
+            <Label x:Name="label1"
+                Text="Loading Slot 1"/>
+            <Picker x:Name="picker1"
+                Title="Select a cargo"
                     HorizontalOptions="Fill"
-                    >
-                <Picker.Items>
-                    <x:String>Humvee</x:String>
-                </Picker.Items>
-                
-            </Picker>
+                    />
+            <Label x:Name="label2"
+                   Text="Loading Slot 2"/>
+            <Picker x:Name="picker2"
+                Title="Select a cargo"
+                    HorizontalOptions="Fill"
+                    />
+            <Label x:Name="label3"
+                   Text="Loading Slot 3"/>
+            <Picker x:Name="picker3"
+                Title="Select a cargo"
+                    HorizontalOptions="Fill"
+                    />
+            <Label x:Name="label4"
+                   Text="Loading Slot 4"/>
+            <Picker x:Name="picker4"
+                Title="Select a cargo"
+                    HorizontalOptions="Fill"
+                    />
+
+            <Label x:Name="label5"
+                   Text="Loading Slot 5"/>
+            <Picker x:Name="picker5"
+                Title="Select a cargo"
+                    HorizontalOptions="Fill"
+                    />
+
+
+
         </StackLayout>
     </StackLayout>   
     

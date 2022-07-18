@@ -61,3 +61,5 @@ C:\Users\Sern_Intern\source\repos\Notes\Notes\Notes.iOS\obj\iPhone\Debug\Notes.i
 C:\Users\Sern_Intern\source\repos\Notes\Notes\Notes.iOS\obj\iPhone\Debug\Notes.iOS.csproj.CopyComplete
 C:\Users\Sern_Intern\source\repos\Notes\Notes\Notes.iOS\obj\iPhone\Debug\Notes.iOS.exe
 C:\Users\Sern_Intern\source\repos\Notes\Notes\Notes.iOS\obj\iPhone\Debug\Notes.iOS.pdb
+C:\Users\Sern_Intern\source\repos\Notes\Notes\Notes.iOS\bin\iPhone\Debug\HtmlAgilityPack.dll
+C:\Users\Sern_Intern\source\repos\Notes\Notes\Notes.iOS\bin\iPhone\Debug\HtmlAgilityPack.pdb

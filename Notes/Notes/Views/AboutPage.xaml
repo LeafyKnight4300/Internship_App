@@ -13,31 +13,41 @@
                        FontSize="30"
                        TextColor="White"
                       />
-                <Picker BackgroundColor="DarkGray" Title="Select an Airport" x:Name="CategoryPicker" ItemsSource="{Binding Categories}" ItemDisplayBinding="{Binding CategoryName}" SelectedIndexChanged="DiameterPicker_SelectedIndexChanged"></Picker>
-                <Picker BackgroundColor="DarkGray" Title="Select a Runway" x:Name="ValuePicker" ItemDisplayBinding="{Binding ValueName}"></Picker>
-
-
+                <Picker x:Name="Location" Title="Select an Airport" BackgroundColor="DarkGray"/>
+                <Picker x:Name="Runway" Title="Select a Runway" BackgroundColor="DarkGray"/>
             </StackLayout>
         </StackLayout>
         <StackLayout Margin="20">
-            <Label Text="Location"
-                   
-                       />
-            <Label Text="Temperature"
-                     
-                       />
-            <Label Text="Wind Speed"
-                       
-                       />
-            <Label Text="Runway Name"
-                       
-                       />
-            <Label Text="Runway Dimensions"
-                      
-                       />
-            <Label Text="Runway Elevation"
-                       
-                       />
+            <Label Text="Location"/>
+            <Label x:Name="place" 
+                   FontSize="20"
+                   HorizontalTextAlignment="Center"
+                   FontAttributes="Bold"/>
+            <Label Text="Temperature"/>
+            <Label x:Name="temperature" 
+                   FontSize="20"
+                   HorizontalTextAlignment="Center"
+                   FontAttributes="Bold"/>
+            <Label Text="Wind Speed" />
+            <Label x:Name="WindSpeed" 
+                   FontSize="20"
+                   HorizontalTextAlignment="Center"
+                   FontAttributes="Bold"/>
+            <Label Text="Runway Name"/>
+            <Label x:Name="rname" 
+                   FontSize="20"
+                   HorizontalTextAlignment="Center"
+                   FontAttributes="Bold"/>
+            <Label Text="Runway Dimensions"/>
+            <Label x:Name="RunwayDimension" 
+                   FontSize="20"
+                   HorizontalTextAlignment="Center"
+                   FontAttributes="Bold"/>
+            <Label Text="Runway Elevation"/>
+            <Label x:Name="RunwayElevation" 
+                   FontSize="20"
+                   HorizontalTextAlignment="Center"
+                   FontAttributes="Bold"/>
         </StackLayout>
     </StackLayout>
 
