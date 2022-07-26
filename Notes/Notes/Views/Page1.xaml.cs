@@ -19,11 +19,11 @@ namespace Notes.Views
         {  {"C-5", 5}, {"C-17", 4}, {"C-130", 3}, {"F-15", 2}, {"Boeing 747", 5}
         };
 
+
             foreach (string place in aircraft.Keys)
                 {
                 AircraftSelect.Items.Add(place);
                 }
-
 
             AircraftSelect.SelectedIndexChanged += (sender, args) =>
             {
