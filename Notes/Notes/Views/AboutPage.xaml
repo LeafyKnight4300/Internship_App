@@ -50,9 +50,8 @@
                    HorizontalTextAlignment="Center"
                    FontAttributes="Bold"/>
         </StackLayout>
-
-
     </StackLayout>
+
 
 
 </ContentPage>
