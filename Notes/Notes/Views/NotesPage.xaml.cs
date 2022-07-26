@@ -7,6 +7,7 @@ namespace Notes.Views
 {
     public partial class NotesPage : ContentPage
     {
+
         string airplane = (string)Info.getActivePlane();
         int runDimensions = 0;
         int slots;
