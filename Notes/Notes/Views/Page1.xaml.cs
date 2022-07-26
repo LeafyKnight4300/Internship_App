@@ -8,6 +8,7 @@ namespace Notes.Views
 {
     public partial class Page1 : ContentPage
     {
+
         public int Pickercount { get; set; }
 
         public Page1()
@@ -23,6 +24,7 @@ namespace Notes.Views
                 AircraftSelect.Items.Add(place);
                 }
 
+
             AircraftSelect.SelectedIndexChanged += (sender, args) =>
             {
                
@@ -32,5 +34,7 @@ namespace Notes.Views
             };
         }
         
+
     }
 }
+
