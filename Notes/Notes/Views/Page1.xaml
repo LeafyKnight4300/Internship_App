@@ -9,7 +9,8 @@
     <ContentPage.Content>
         <StackLayout Margin="0">
             <Grid ColumnDefinitions="*,*">
-                <Picker x:Name = "picker"  
+                <Picker x:Name = "AircraftSelect"  
+                  x:FieldModifier="public"
                         Title="Select an aircraft"
                     Grid.Row="3"
                     Grid.ColumnSpan="2"

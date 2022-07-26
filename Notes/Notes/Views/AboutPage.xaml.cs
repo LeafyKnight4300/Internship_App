@@ -1,9 +1,7 @@
 ﻿using HtmlAgilityPack;
 using System;
 using System.Collections.Generic;
-using System.IO;
 using Xamarin.Forms;
-using Xamarin.Forms.Internals;
 
 namespace Notes.Views
 {
@@ -13,6 +11,7 @@ namespace Notes.Views
         string Weather = "https://weather.com/weather/today/l/";
         public AboutPage()
         {
+
             InitializeComponent();
             var Local = new Dictionary<string, string>
         {  {"Hill", "KHIF"}, {"Robins", "KWRB"}, {"Tinker", "KTIK"}, {"Shaw", "KSSC"}, {"Atlanta", "KATL"}
@@ -37,12 +36,12 @@ namespace Notes.Views
                     string spot = (string)Location.SelectedItem;
                     reset();
                     address += Local[spot];
-
                     doc = web.Load(address);
 
                     if (doc.DocumentNode.SelectNodes("/html/body/table[5]/tr/td[1]/h4") == null)
                     {
-                        Runway.Items.Add("Website is down, try again later");
+                        Runway.Title = "Website is down, try again later";
+                        
                     }
                     else
                     {
@@ -51,7 +50,6 @@ namespace Notes.Views
                     temp();
                     windSpeed();
                     }
-                   
                 }
             };
             Runway.SelectedIndexChanged += (sender, args) =>
@@ -61,7 +59,6 @@ namespace Notes.Views
                     runwayName();
                     runwayDimensions();
                     runwayElevation();
-
                 }
             };
 
@@ -109,25 +106,10 @@ namespace Notes.Views
                 string x = doc.DocumentNode.SelectNodes("/html/body/table[5]/tr/td[1]/table[1]/tr[7]/td[2]")[0].InnerText;
                 Weather += x;
                 weather = web.Load(Weather);
-                Console.WriteLine(Location.SelectedIndex);
-                if (weather.DocumentNode.SelectNodes("/html/body/div[1]/main/div[2]/main/div[3]/section/div[1]/div/h2")[0].InnerText == "Rain")
-                {
-                    int index = 10;
-                    string wind = weather.DocumentNode.SelectNodes("/html/body/div[1]/main/div[2]/main/div[10]/section/div[2]/div[2]/div[2]/span")[0].InnerText;
-                    wind = wind.Replace("Wind Direction", "");
-                    Weather = "https://weather.com/weather/today/l/";
-                    WindSpeed.Text = wind;
-                }
-                else
-                {
-                    string wind = weather.DocumentNode.SelectNodes("/html/body/div[1]/main/div[2]/main/div[6]/section/div[2]/div[2]/div[2]/span")[0].InnerText;
-                    wind = wind.Replace("Wind Direction", "");
-                    Weather = "https://weather.com/weather/today/l/";
-                    WindSpeed.Text = wind;
-
-                }
-
-
+                string wind = weather.DocumentNode.SelectNodes("//*[@id='todayDetails']/section/div[2]/div[2]/div[2]/span")[0].InnerText;
+                wind = wind.Replace("Wind Direction", "");
+                Weather = "https://weather.com/weather/today/l/";
+                WindSpeed.Text = wind;
             }
             void runwayName()
             {
@@ -143,15 +125,29 @@ namespace Notes.Views
                     count -= 1;
                 var test = doc.DocumentNode.SelectNodes("/html/body/table[5]/tr/td[1]/table[" + count as string + "]/tr[1]/td[2]")[0].InnerText;
                 RunwayDimension.Text = test;
+                Info.setRunwayData(test);
+                
+                
             }
             void runwayElevation()
             {
+                int number = 0;
+                int spot = Runway.SelectedIndex;
                 int count = Runway.SelectedIndex;
                 count /= 2;
                 count += 7;
+                spot %= 2;
+                if (spot == 0)
+                {
+                    number = 2;
+                }
+                else if (spot == 1)
+                {
+                    number = 4;
+                }
                 if (Location.SelectedIndex == 0)
                     count -= 1;
-                var test = doc.DocumentNode.SelectNodes("/html/body/table[5]/tr/td[1]/table[" + count as string + "]/tr[8]/td[2]")[0].InnerText;
+                var test = doc.DocumentNode.SelectNodes("/html/body/table[5]/tr/td[1]/table[" + count as string + "]/tr[8]/td[" + number + "]")[0].InnerText;
                 RunwayElevation.Text = test;
 
             }
