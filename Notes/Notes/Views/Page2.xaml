@@ -2,12 +2,36 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Notes.Views.Page2"
-             Title="Extra">
+             Title="">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+        <StackLayout Margin="0">
+            <Grid>
+                <Label Text="Information"
+                VerticalOptions="Center" 
+                HorizontalOptions="Center"
+                   TextDecorations="Underline"
+                   TextColor="Black"
+                   FontSize="30"
+                   Grid.Row="1"
+                   />
+
+                <Image Source="SWEG.png"
+                       Grid.Row="3"
+                       Grid.RowSpan="5"
+                       HorizontalOptions="Center"
+                       VerticalOptions="Center"
+                       HeightRequest="512"
+                       WidthRequest="256"/>
+
+                <Label Text="This app was developed at the Project Synergy Building for the inaugural highschool internship program." 
+                       Margin="8"
+                       VerticalOptions="Start"
+                       HorizontalOptions="Start"
+                       TextColor="Black"
+                       FontSize="22"
+                       Grid.Row="8"
+                       Grid.RowSpan="5"/>
+            </Grid>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
